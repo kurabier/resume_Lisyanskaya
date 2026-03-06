@@ -21,4 +21,4 @@ jobs:
           git config user.name "GitHub Actions"
           git add Lisyanskaya_resume.pdf || true
           git commit -m "Update PDF" || true
-          git push || true
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/kurabier/Lisyanskaya_resume.git || true
